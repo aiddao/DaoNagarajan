@@ -4,6 +4,13 @@ body {
     background-color: white;
 }
 
+img {
+    height:120px;
+}
+
+.title-logo {
+    text-align:center;
+}
 /*search-page related css styles*/
 
 .search-bar {
