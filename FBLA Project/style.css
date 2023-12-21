@@ -1,0 +1,29 @@
+//site wide css styles
+
+
+//search page related css styles
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.organization-cards {
+    margin-top: 20px;
+}
+
+.card {
+    margin-top: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.card > .header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card > .email {
+    font-style: italic;
+}
