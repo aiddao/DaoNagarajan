@@ -1,6 +1,6 @@
 <HTML>
   <head>
-    <title>Career and Technical Education Directory</title>
+    <header>Career and Technical Education Directory</header>
   </head>
 
   <body>
