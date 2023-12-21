@@ -1,7 +1,10 @@
-//site wide css styles
+/*sitewide styles*/
 
+body {
+    background-color: white;
+}
 
-//search page related css styles
+/*search-page related css styles*/
 
 .search-bar {
     display: flex;
