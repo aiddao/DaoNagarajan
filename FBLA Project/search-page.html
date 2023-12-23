@@ -12,45 +12,37 @@
     </div>
 
     <div class = "organization-cards">
-      <div class = "card">
-        <div class = "header">ASYNC</div>
+      <div class = "content">
+        <div contenteditable="true" class = "header">ASYNC</div>
         <div class = "email">async@gmail.com</div>
         <div class = "body">Quantum Science Research Facility</div>
       </div>
-      <div class = "card">
-        <div class = "header">ASYNC</div>
-        <div class = "email">async@gmail.com</div>
-        <div class = "body">Quantum Science Research Facility</div>
-      </div>
-      <div class = "card">
-        <div class = "header">ASYNC</div>
-        <div class = "email">async@gmail.com</div>
-        <div class = "body">Quantum Science Research Facility</div>
-      </div>
-      <div class = "card">
-        <div class = "header">ASYNC</div>
-        <div class = "email">async@gmail.com</div>
-        <div class = "body">Quantum Science Research Facility</div>
-      </div>
-      <div class = "card">
-        <div class = "header">ASYNC</div>
-        <div class = "email">async@gmail.com</div>
-        <div class = "body">Quantum Science Research Facility</div>
-      </div>
-      <div class = "card">
-        <div class = "header">ASYNC</div>
-        <div class = "email">async@gmail.com</div>
-        <div class = "body">Quantum Science Research Facility</div>
-      </div>
-      <div class = "card">
-        <div class = "header">ASYNC</div>
+      <div class = "content">
+        <div contenteditable="true" class = "header">ASYNC</div>
         <div class = "email">async@gmail.com</div>
         <div class = "body">Quantum Science Research Facility</div>
       </div>
     </div>
+    <br>
+    <button id="edit_content">Edit</button>
   </body>
   
   <script>
+    window.onload = function() {
+    	if(localStorage.getItem('content')) {
+    		document.querySelector('.content').innerHTML = localStorage.getItem('content');
+      }
+    }
+    
+    let editBtn = document.querySelector('#edit_content');
+    let content = document.querySelector('.content');
+    
+    editBtn.addEventListener('click', () => {
+    	content.contentEditable = !content.isContentEditable;
+      if(content.contentEditable === 'false') {
+      	localStorage.setItem('content', content.innerHTML);
+      }
+    });
   </script>
 
 </HTML>
