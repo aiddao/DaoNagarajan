@@ -8,41 +8,25 @@
     <a href = "index.html">Back to Home</a>
     <div class = "search-bar">
     <label for = "search">Search Organizations</label>
-    <input type = "search" id = "search">
+    <input type = "search" id = "search" data-search>
     </div>
 
-    <div class = "organization-cards">
-      <div class = "content">
-        <div class = "header">ASYNC</div>
-        <div class = "email">async@gmail.com</div>
-        <div class = "body">Quantum Science Research Facility</div>
-      </div>
-      <div class = "content">
-        <div class = "header">ASYNC</div>
-        <div class = "email">async@gmail.com</div>
-        <div class = "body">Quantum Science Research Facility</div>
+    <div id = "organization-cards">
+        <div class = "content">
+            <div class = "header">ASYNC</div>
+            <div class = "email">async@gmail.com</div>
+            <div class = "body">Quantum Science Research Facility</div>
+        </div>
+        <div class = "content">
+            <div class = "header">ASYNC</div>
+            <div class = "email">async@gmail.com</div>
+            <div class = "body">Quantum Science Research Facility</div>
       </div>
     </div>
     <br>
     <button id="edit_content">Edit</button>
   </body>
   
-  <script>
-    window.onload = function() {
-    	if(localStorage.getItem('content')) {
-    		document.querySelector('.content').innerHTML = localStorage.getItem('content');
-      }
-    }
-    
-    let editBtn = document.querySelector('#edit_content');
-    let content = document.querySelector('.content');
-    
-    editBtn.addEventListener('click', () => {
-    	content.contentEditable = !content.isContentEditable;
-      if(content.contentEditable === 'false') {
-      	localStorage.setItem('content', content.innerHTML);
-      }
-    });
-  </script>
+  <script src = "script.js"></script>
 
 </HTML>
