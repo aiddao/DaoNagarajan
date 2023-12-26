@@ -14,19 +14,23 @@ function buildCards(data) {
 }
 
 window.onload = function() {
-	if(localStorage.getItem('content')) {
-		document.querySelectorAll('.content').innerHTML = localStorage.getItem('content');
+  if (localStorage.getItem('content')) {
+    document.querySelectorAll('.content').forEach(element => {
+      element.innerHTML = localStorage.getItem('content');
+    });
   }
 }
 
 let editBtn = document.querySelector('#edit_content');
-let content = document.querySelector('.content');
+let content = document.querySelectorAll('.content');
 
 editBtn.addEventListener('click', () => {
-	content.contentEditable = !content.isContentEditable;
-  if(content.contentEditable === 'false') {
-  	localStorage.setItem('content', content.innerHTML);
-  }
+    content.forEach(element => {
+        element.contentEditable = !element.isContentEditable;
+        if (!element.isContentEditable) {
+        localStorage.setItem('content', element.innerHTML);
+        }
+    });
 });
 
 
