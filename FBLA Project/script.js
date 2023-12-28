@@ -1,17 +1,34 @@
+buildCards();
+
 const searchInput = document.querySelector("[data-search]");
 
-var myArray = [ 'balls', 'jimmy'
-    ]
-console.log = myArray[0];
-function buildCards(data) {
+let myArray = [ {'name' : 'ASYNC' , 'email' : 'async@gmail.com' , 'info' : 'Quantum Science Research Facility'},
+{'name' : 'Cover Corp' , 'email' : 'cover@gmail.com' , 'info' : 'Idol Agency'}
+]
+
+function buildCards() {
     var orgCards = document.getElementById('organization-cards');
     
     for (var i = 0; i < myArray.length; i++) {
-        var card = document.createElement('div').setAttribute('class', 'content');
-        var head = document.createElement('div').setAttribute('class','header');
-        console.log = (myArray[i].name);
-    }
-}
+        let card = document.createElement('div');
+        card.classList.add('content');
+        
+        let head = document.createElement('div');
+        head.classList.add('header');
+        head.innerHTML = myArray[i].name;
+        
+        let email = document.createElement('div');
+        email.classList.add('email');
+        email.innerHTML = myArray[i].email;
+        
+        let info = document.createElement('div');
+        info.classList.add('body');
+        info.innerHTML = myArray[i].info;
+        
+        card.append(head, email, info);
+        orgCards.appendChild(card);
+    };
+};
 
 window.onload = function() {
   if (localStorage.getItem('content')) {
@@ -35,13 +52,13 @@ editBtn.addEventListener('click', () => {
 
 
 //Requires way to return all data to work.
-//let search = document.getElementById("search");
-//search.addEventListener("keyup",function(){
-    //var value = this.value;
-    //console.log("Value:", value);
-//});
+/*let search = document.getElementById("search");
+search.addEventListener("keyup",function(){
+    var value = this.value;
+    console.log("Value:", value);
+}); */
 
-//let users = []
-//searchInput.addEventListener("input", e => {
-    //*const value = e.target.value;
-//});
+/*let users = []
+searchInput.addEventListener("input", e => {
+    const value = e.target.value;
+}); */
