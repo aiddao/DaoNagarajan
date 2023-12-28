@@ -1,5 +1,3 @@
-buildCards();
-
 const searchInput = document.querySelector("[data-search]");
 
 let myArray = [ {'name' : 'ASYNC' , 'email' : 'async@gmail.com' , 'info' : 'Quantum Science Research Facility'},
@@ -29,6 +27,7 @@ function buildCards() {
         orgCards.appendChild(card);
     };
 };
+buildCards();
 
 window.onload = function() {
   if (localStorage.getItem('content')) {
