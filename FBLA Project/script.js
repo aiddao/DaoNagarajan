@@ -1,6 +1,13 @@
 //List of partners of the CTE department
-let partnersCTE = [ {'name' : 'ASYNC' , 'email' : 'async@gmail.com' , 'info' : 'Quantum Science Research Facility'},
-{'name' : 'Cover Corp' , 'email' : 'cover@gmail.com' , 'info' : 'Idol Agency'}
+let partnersCTE = [
+{'name' : 'ASYNC' , 'email' : 'async@gmail.com' , 'info' : 'Quantum Science Research Facility'},
+{'name' : 'Cover Corp' , 'email' : 'cover@gmail.com' , 'info' : 'Idol Agency'},
+{'name' : 'Ball' , 'email' : 'balling@gmail.com' , 'info' : 'Ball Company'},
+{'name' : 'Square' , 'email' : 'squaring@gmail.com' , 'info' : 'Square Company'},
+{'name' : 'Among Us' , 'email' : 'sussy@gmail.com' , 'info' : 'Sus Company'},
+{'name' : 'Triangle' , 'email' : 'triangling@gmail.com' , 'info' : 'Triangle Company'},
+{'name' : 'Hexagon' , 'email' : 'hexagoning@gmail.com' , 'info' : 'Hexagon Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
 ]
 
 var orgCards = document.getElementById('organization-cards');
@@ -39,13 +46,13 @@ let partners = partnersCTE.map(item => ({
 
 //Reads the inputs in the search bar and filters the information.
 searchInput.addEventListener("input", e => {
-  let value = e.target.value.toLowerCase(); // Convert input value to lowercase for case-insensitive comparison
-  let filteredPartners = partners.filter(partner =>
-    partner.name.toLowerCase().includes(value) ||
-    partner.email.toLowerCase().includes(value) ||
-    partner.info.toLowerCase().includes(value)
-  );
-  console.log(filteredPartners);
+    let value = e.target.value.toLowerCase(); // Convert input value to lowercase for case-insensitive comparison
+    let filteredPartners = partners.filter(partner =>
+        partner.name.toLowerCase().includes(value) ||
+        partner.email.toLowerCase().includes(value) ||
+        partner.info.toLowerCase().includes(value)
+    );
+    console.log(filteredPartners);
   
   // Loop through all content divs
   document.querySelectorAll('.content').forEach(card => {
@@ -56,60 +63,37 @@ searchInput.addEventListener("input", e => {
     card.classList.toggle('hide', !cardIncluded);
   });
   
-});
-/*
-//Loads edited content
+}); 
+
 window.onload = function() {
-  if (localStorage.getItem('content')) {
+    // Load edited content for each .content div
     document.querySelectorAll('.content').forEach(element => {
-      element.innerHTML = localStorage.getItem('content');
-    });
-  }
-}
-
-//Creates button that makes the content editable
-let editBtn = document.querySelector('#edit_content');
-let content = document.querySelectorAll('.content');
-
-editBtn.addEventListener('click', () => {
-    content.forEach(element => {
-        element.contentEditable = !element.isContentEditable;
-        if (!element.isContentEditable) {
-        localStorage.setItem('content', element.innerHTML);
-        }
-    });
-});
-*/
-/*
-window.onload = function() {
-  // Load edited content for each .content div
-  document.querySelectorAll('.content').forEach(element => {
     const contentKey = getContentKey(element);
     const savedContent = localStorage.getItem(contentKey);
     if (savedContent) {
-      element.innerHTML = savedContent;
+        element.innerHTML = savedContent;
     }
-  });
-
-  // Creates button that makes the content editable
-  let editBtn = document.querySelector('#edit_content');
-  let content = document.querySelectorAll('.content');
-
-  editBtn.addEventListener('click', () => {
-    content.forEach(element => {
-      const contentKey = getContentKey(element);
-      element.contentEditable = !element.isContentEditable;
-
-      if (!element.isContentEditable) {
-        localStorage.setItem(contentKey, element.innerHTML);
-      }
     });
-  });
-
-  function getContentKey(element) {
+    
+    // Identifies the edit button and all content divs
+    let editBtn = document.querySelector('#edit_content');
+    let content = document.querySelectorAll('.content');
+    
+    
+    editBtn.addEventListener('click', () => {
+    content.forEach(element => {
+        const contentKey = getContentKey(element);
+        element.contentEditable = !element.isContentEditable;
+        
+        if (!element.isContentEditable) {
+        localStorage.setItem(contentKey, element.innerHTML);
+        }
+    });
+    });
+    
+    function getContentKey(element) {
     // Get a unique identifier for each .content div
     // You can customize this based on your needs
-    return 'content_' + element.dataset.id;
-  }
+    return 'content_' + element.getAttribute('data-id');
+    };
 };
-*/
