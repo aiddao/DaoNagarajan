@@ -8,8 +8,26 @@ let partnersCTE = [
 {'name' : 'Triangle' , 'email' : 'triangling@gmail.com' , 'info' : 'Triangle Company'},
 {'name' : 'Hexagon' , 'email' : 'hexagoning@gmail.com' , 'info' : 'Hexagon Company'},
 {'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
-]
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+{'name' : 'Hoyoverse' , 'email' : 'hoyoverse@gmail.com' , 'info' : 'Chinese Game Developer Company'},
+];
 
+//Gets the div that holds all the cards
 var orgCards = document.getElementById('organization-cards');
 
 //Creates a card for each partner
@@ -28,7 +46,7 @@ for (var i = 0; i < partnersCTE.length; i++) {
     
     let info = document.createElement('div');
     info.classList.add('body');
-    info.innerText = partnersCTE[i].info;
+    info.innerHTML = partnersCTE[i].info;
     
     card.append(head, email, info);
     orgCards.appendChild(card);
