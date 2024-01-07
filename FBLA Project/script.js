@@ -1,6 +1,6 @@
 //List of partners of the CTE department
 let partnersCTE = [
-{'name' : 'ASYNC' , 'email' : 'async@gmail.com' , 'info' : 'Quantum Science Research Facility'},
+{'name' : 'Zeeland Education Center' , 'email' : 'helpdesk@zec.com' , 'info' : 'Quantum Science Research Facility'},
 {'name' : 'Cover Corp' , 'email' : 'cover@gmail.com' , 'info' : 'Idol Agency'},
 {'name' : 'Ball' , 'email' : 'balling@gmail.com' , 'info' : 'Ball Company'},
 {'name' : 'Square' , 'email' : 'squaring@gmail.com' , 'info' : 'Square Company'},
