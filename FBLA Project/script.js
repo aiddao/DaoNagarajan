@@ -53,7 +53,7 @@ for (var i = 0; i < partnersCTE.length; i++) {
     
 };
 
-let searchInput = document.querySelector("#search");
+let searchInput = document.getElementById("search");
 
 //Creates a new array named 'partners'
 let partners = partnersCTE.map(item => ({
