@@ -83,8 +83,8 @@ searchInput.addEventListener("input", e => {
   
 }); 
 
+// Load edited content for each .content div whenever the page loads
 window.onload = function() {
-    // Load edited content for each .content div
     document.querySelectorAll('.content').forEach(element => {
     const contentKey = getContentKey(element);
     const savedContent = localStorage.getItem(contentKey);
@@ -97,7 +97,7 @@ window.onload = function() {
     let editBtn = document.querySelector('#edit_content');
     let content = document.querySelectorAll('.content');
     
-    
+    //Adds a function to the edit button that makes content divs editable if they aren't and vice versa
     editBtn.addEventListener('click', () => {
     content.forEach(element => {
         const contentKey = getContentKey(element);
@@ -111,7 +111,6 @@ window.onload = function() {
     
     function getContentKey(element) {
     // Get a unique identifier for each .content div
-    // You can customize this based on your needs
     return 'content_' + element.getAttribute('data-id');
     };
 };
