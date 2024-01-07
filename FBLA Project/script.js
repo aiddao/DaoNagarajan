@@ -28,7 +28,7 @@ let partnersCTE = [
 ];
 
 //Gets the div that holds all the cards
-var orgCards = document.getElementById('organization-cards');
+let orgCards = document.getElementById('organization-cards');
 
 //Creates a card for each partner
 for (var i = 0; i < partnersCTE.length; i++) {
