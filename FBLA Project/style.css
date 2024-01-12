@@ -19,21 +19,29 @@ img {
     margin-top: 5px;
 }
 
-.organization-cards {
+#organization-cards {
     margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .content {
     margin-top: 5px;
     border: 1px solid black;
     padding: 5px;
+    
 }
 
 .content > .header {
     font-size: 20px;
     font-weight: bold;
+    font-family: verdana;
 }
 
 .content > .email {
     font-style: italic;
+}
+
+.hide {
+    display: none;
 }
