@@ -45,3 +45,40 @@ img {
 .hide {
     display: none;
 }
+/*index-page&Parters-page related css styles*/
+img {
+    height:120px;
+}
+
+.title-logo {
+    text-align:center;
+    background-color:#2D400B;
+}
+body {
+    background-color:#800020;
+}
+h1 {
+    font-size:80px;
+}
+
+p {
+    font-size:50px;
+    text-align:center;
+}
+
+.indexlinks {
+    font-size:45px;
+    border:solid;
+    border-width:5px;
+    padding:10px;
+    border-color:black;
+    color:black;
+    border:margin;
+    
+}
+
+a {
+    font-size:30px;
+    border:none;
+    color:black;
+}
