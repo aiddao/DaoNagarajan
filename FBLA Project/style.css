@@ -17,7 +17,8 @@ img {
     height:90px; 
     padding:15px; 
     background-color:grey; 
-    color: white"
+    color: white;
+    text-align: center;
 }
 
 .search-bar {
