@@ -13,9 +13,10 @@ img {
 }
 
 #banner {
-    width:728px; 
+    width: window.innerWidth; 
     height:90px; 
     padding:15px; 
+    margin: auto;
     background-color:grey; 
     color: white;
     text-align: center;
