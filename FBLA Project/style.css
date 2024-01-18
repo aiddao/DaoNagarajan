@@ -11,7 +11,14 @@ img {
 .title-logo {
     text-align:center;
 }
-/*search-page related css styles*/
+
+#banner {
+    width:728px; 
+    height:90px; 
+    padding:15px; 
+    background-color:grey; 
+    color: white"
+}
 
 .search-bar {
     display: flex;
