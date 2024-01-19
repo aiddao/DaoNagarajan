@@ -1,6 +1,6 @@
-# Project Name
+# MRHS CTE Department Partnerships Database
 
-Brief description of your project.
+This is a program of a website that can help Mountain Ridge High School keep track of partnerships with their CTE Department.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -9,10 +9,10 @@ Brief description of your project.
 - [Contributing](#contributing)
 
 ## Overview
-Provide a high-level overview of your project, its purpose, and any key concepts.
+This MRHS CTE Department Partnerships Database is a website that uses HTML, CSS, and Javascript to create a series of identity cards for each organization and a search bar to quickly locate information. The program will make it easier for the CTE Department to keep track of existing partners or locate appropriate partners to assist the CTE Department in its endeavours. 
 
 ## Features
-List the main features of your website.
+- Card generating system that generates cards when new information is entered into the array.
 
 ## Usage
 Instructions on how to use your website, including any important details or considerations.
