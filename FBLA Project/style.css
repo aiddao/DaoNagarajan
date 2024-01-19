@@ -5,11 +5,7 @@ body {
 }
 
 img {
-    height:120px;
-}
-
-.title-logo {
-    text-align:center;
+    height:130px;
 }
 
 #banner {
@@ -21,12 +17,17 @@ img {
     color: white;
     text-align: center;
     background-color: darkgreen;
+    font-family:Verdana;
+    font-size:30px;
+    
 }
 
 .search-bar {
     display: flex;
     flex-direction: column;
     margin-top: 5px;
+    color:white;
+    font-family:Verdana;
 }
 
 #organization-cards {
