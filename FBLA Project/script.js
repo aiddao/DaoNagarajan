@@ -3,7 +3,7 @@ let partnersCTE = [
 {'name' : 'NorthNec' , 'email' : 'helpdesk@zec.edu' , 'info' : 'CTE School <br> Offers CTE Student Programs for students to learn trade.'},
 {'name' : 'Apprenticeships MRC' , 'email' : 'apprentices@mtnrc.com' , 'info' : 'Apprenticeship Finder <br> Helps students find local apprenticeships for trade jobs.'},
 {'name' : 'UltraHealth' , 'email' : 'facilitytours@ultrahealth.org' , 'info' : 'Local Hospital <br> Offers tours for students with biomedical electives to learn about that field.'},
-{'name' : 'Phoenix Institue of Technology' , 'email' : 'servicedesk@pit.edu' , 'info' : "Highly regarded college that specializes in technology. <br> Sponsors the engineering department's activities."},
+{'name' : 'Phoenix Institute of Technology' , 'email' : 'servicedesk@pit.edu' , 'info' : "Highly regarded college that specializes in technology. <br> Sponsors the engineering department's activities."},
 {'name' : 'Southwest University of Advancing Technology' , 'email' : 'sp@suat.edu' , 'info' : 'College that specializes in the latest code advancements. <br> Recruits the high schoolers for college and offers presentations about the latest technology or jobs.'},
 {'name' : 'Tech Innovators Corp', 'email' : 'info@techinnovators.com', 'info' : 'Leading technology company <br> Specializes in innovative solutions for education.'},
 {'name' : 'BioTech Solutions Ltd', 'email' : 'contact@biotechsolutions.com', 'info' : 'Biotechnology firm <br> Committed to promoting STEM education through hands-on experiences.'},
