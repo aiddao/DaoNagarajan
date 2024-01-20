@@ -9,7 +9,7 @@ This is a program of a website that can help Mountain Ridge High School keep tra
 - [Contributors](#contributors)
 
 ## Overview
-This MRHS CTE Department Partnerships Database is a website that uses HTML, CSS, and Javascript to create a series of identity cards for each organization, a button to edit the content of each card, and a search bar to quickly locate information. The program will make it easier for the CTE Department to keep track of existing partners or locate appropriate partners to assist the CTE Department in its endeavours. 
+This MRHS CTE Department Partnerships Database is a website that uses HTML, CSS, and Javascript to create a series of identity cards for each organization and a search bar to quickly locate information. The program will make it easier for the CTE Department to keep track of existing partners or locate appropriate partners to assist the CTE Department in its endeavours. 
 
 ## Features
 * Card generating system that generates cards when new information is entered into the array.
