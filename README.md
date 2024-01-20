@@ -14,11 +14,9 @@ This MRHS CTE Department Partnerships Database is a website that uses HTML, CSS,
 ## Features
 * Card generating system that generates cards when new information is entered into the array.
 * Search bar to filter and find information among the cards.
-* Edit button to make the information cards editable.
-* Saves the editted text into the computer's cookies.
 
 ## Usage
-Click this [link](https://mrhs-cte-partnerships-database-8821155.codehs.me/index.html) to get search the current database. Click the edit button to make small changes to the content, but to change an entire card, it is recommended to change the arrary directly. Click the edit button again to stop editing.
+Click this [link](https://mrhs-cte-partnerships-database-8821155.codehs.me/index.html) to get search the current database. Edit the arrary directly in the proper format in the script.js file to create new cards or edit pre-existing cards.
 
 To create your own database, copy the files and change the code as it is suited.
 
