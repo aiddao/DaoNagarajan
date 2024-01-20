@@ -4,8 +4,13 @@ body {
     background-color: maroon;
 }
 
-img {
+#logo {
+
     height:130px;
+}
+
+figcaption {
+    font-size: 10px;
 }
 
 #banner {
