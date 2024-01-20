@@ -82,35 +82,3 @@ searchInput.addEventListener("input", e => {
   });
   
 }); 
-
-// Load edited content for each .content div whenever the page loads
-/*window.onload = function() {
-    document.querySelectorAll('.content').forEach(element => {
-    const contentKey = getContentKey(element);
-    const savedContent = localStorage.getItem(contentKey);
-    if (savedContent) {
-        element.innerHTML = savedContent;
-    }
-    });
-    
-    // Identifies the edit button and all content divs
-    let editBtn = document.querySelector('#edit_content');
-    let content = document.querySelectorAll('.content');
-    
-    //Adds a function to the edit button that makes content divs editable if they aren't and vice versa
-    editBtn.addEventListener('click', () => {
-    content.forEach(element => {
-        const contentKey = getContentKey(element);
-        element.contentEditable = !element.isContentEditable;
-        
-        if (!element.isContentEditable) {
-        localStorage.setItem(contentKey, element.innerHTML);
-        }
-    });
-    });
-    
-    function getContentKey(element) {
-    // Get a unique identifier for each .content div
-    return 'content_' + element.getAttribute('data-id');
-    };
-};*/
