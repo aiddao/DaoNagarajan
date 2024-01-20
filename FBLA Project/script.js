@@ -112,5 +112,5 @@ searchInput.addEventListener("input", e => {
     function getContentKey(element) {
     // Get a unique identifier for each .content div
     return 'content_' + element.getAttribute('data-id');
-    };*/
-};
+    };
+};*/
