@@ -84,7 +84,7 @@ searchInput.addEventListener("input", e => {
 }); 
 
 // Load edited content for each .content div whenever the page loads
-window.onload = function() {
+/*window.onload = function() {
     document.querySelectorAll('.content').forEach(element => {
     const contentKey = getContentKey(element);
     const savedContent = localStorage.getItem(contentKey);
@@ -112,5 +112,5 @@ window.onload = function() {
     function getContentKey(element) {
     // Get a unique identifier for each .content div
     return 'content_' + element.getAttribute('data-id');
-    };
+    };*/
 };
