@@ -16,9 +16,9 @@ This MRHS CTE Department Partnerships Database is a website that uses HTML, CSS,
 * Search bar to filter and find information among the cards.
 
 ## Usage
-Click this [link](https://mrhs-cte-partnerships-database-8821155.codehs.me/index.html) to get search the current database. Edit the arrary directly in the proper format in the script.js file to create new cards or edit pre-existing cards.
+Click this [link](https://mrhs-cte-partnerships-database-8821155.codehs.me/index.html) to get search the current database. 
 
-To create your own database, copy the files and change the code as it is suited.
+To create your own database, copy the files and change the code as it is suited. Edit the arrary directly in the proper format in the script.js file to create new cards or edit pre-existing cards.
 
 ## Contributors
 Coded by Aiden Dao and Krishna Nagarajan.
